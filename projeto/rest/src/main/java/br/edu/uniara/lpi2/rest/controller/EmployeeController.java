@@ -54,7 +54,7 @@ public class EmployeeController {
     Employee one(@PathVariable Long id) {
 
         return repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Nao encontrado"));
+                .orElseThrow(() -> new RuntimeException("Nao foi encontrado"));
     }
 
     @GetMapping
